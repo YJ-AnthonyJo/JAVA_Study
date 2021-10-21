@@ -118,6 +118,8 @@ public class HelloWorld {
         Generics 미사용시 : ArrayList안에 추가되는 객체는 Object자료형.
         Object : 모든 자료형..
         */
+
+
         //maps : python의 dictionary같은 것.
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("people", "사람");
@@ -127,6 +129,44 @@ public class HelloWorld {
         System.out.println(map.remove("people")); //없앤 value리턴
         System.out.println(map.size());
 
+//        java의 if 사용법 : C와 동일
+//        java의 switch - case 사용법 : C와 동일.
+//        ArrayList.contains(parm) : parm이 해당 ArrayList Object에 존재하는가?
+        ArrayList<String> pocket = new ArrayList<String>();
+        pocket.add("paper");
+        pocket.add("handphone");
+        pocket.add("money");
+
+        if (pocket.contains("money")) {
+            System.out.println("택시를 타고 가라");
+        }else {
+            System.out.println("걸어가라");
+        }
+
+
+//        java의 while 사용법 : C와 동일, 단 true라는 boolean class(이게 class가 맞나?)가 있는 것이 차이?
+//        java의 for 사용법 : C와 동일, ""
+
+//        java의 for each문 : python의 for문과 비슷하다고 할 수 있을 듯하다.
+        /*for(type var:iterate){
+        * body of loop
+        * }
+        */
+        /*의미
+        * iterate를 반복횟수마다 하나씩 순차적으로 var에 대입된다.
+        * iterate : ArrayList등이 가능하다.
+        * */
+
+        String[] numbers = {"one", "two", "three"};
+        for(String number: numbers) {
+//            for (type var: iterate) {
+//                  body-of-loop
+//              }
+            System.out.println(number);
+        }
+
+//        단, foreach문은 따로 반복회수를 명시적으로 주는 것이 불가능하고, 1스탭씩 순차적으로 반복될때만 사용가능하다는 제약이 있다.
+//        python에서도 iterate의 하나씩 하였다.
 
     }
 }
