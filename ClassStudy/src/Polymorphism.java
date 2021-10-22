@@ -59,7 +59,7 @@ class Bouncer_poly{
         animal.bark();
         //animal.getFood(); //없는 메소드이다.
         //자세한 건, 이 클래스의 main에서 말한다.
-
+        //이렇게 하나의 객체가 여러개의 자료형 타입을 가질 수 있는 것을 객체지향 세계에서는 다형성, 폴리모피즘(Polymorphism)이라고 부른다.
         //이또한 사용하고자 한다면 Lion_poly로 선언하거나, 이 둘(Barkable, Predetor) 모두를 포함한 인터페이스 혹은 class를 만들면 된다.
     }
 
